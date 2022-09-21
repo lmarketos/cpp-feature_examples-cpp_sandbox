@@ -23,6 +23,8 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     wget \
     git \
     ca-certificates
+RUN apt-get -y --no-install-recommends install \
+    libboost-all-dev
 RUN wget https://github.com/ninja-build/ninja/releases/latest/download/ninja-linux.zip && \
     mv ninja-linux.zip /usr/local/bin/ninja.gz && \
     gunzip /usr/local/bin/ninja.gz && \

@@ -6,5 +6,6 @@ add_compile_options(-Wall -Wextra -pedantic -pedantic-errors -Wconversion -Wsign
 enable_testing()
 
 add_subdirectory(./src/hello_world)
+add_subdirectory(./src/asio)
 
 
