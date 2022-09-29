@@ -1,15 +1,11 @@
-#include <iostream>
 #include <boost/asio.hpp>
 #include <chrono>
+#include <iostream>
 #include <thread>
 
-void print(const boost::system::error_code&)
-{
-  std::cout << "print\n";
-}
+void print(const boost::system::error_code &) { std::cout << "print\n"; }
 
-int main()
-{
+int main() {
   boost::asio::io_context io;
 
   using namespace std::chrono_literals;

@@ -1,14 +1,12 @@
-#include <iostream>
 #include <boost/asio.hpp>
-#include <chrono>
 #include <boost/version.hpp>
+#include <chrono>
+#include <iostream>
 #include <thread>
 
-int main()
-{
-  std::cout << "Boost version: " << BOOST_VERSION / 100000 << "." << 
-    BOOST_VERSION / 100 % 1000 << "." <<
-    BOOST_VERSION % 100 << '\n';
+int main() {
+  std::cout << "Boost version: " << BOOST_VERSION / 100000 << "."
+            << BOOST_VERSION / 100 % 1000 << "." << BOOST_VERSION % 100 << '\n';
   boost::asio::io_context io;
 
   using namespace std::chrono_literals;
